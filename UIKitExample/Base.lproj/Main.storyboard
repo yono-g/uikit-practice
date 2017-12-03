@@ -45,6 +45,30 @@
                                             <segue destination="ZjU-0Q-8CE" kind="show" id="fKK-4l-mDb"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="c3E-Wp-GsI">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c3E-Wp-GsI" id="DRK-BM-V6q">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFv-z2-AY6" userLabel="Popup">
+                                                    <rect key="frame" x="26" y="12" width="297" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lFv-z2-AY6" secondAttribute="trailing" constant="10" id="UT7-kt-waz"/>
+                                                <constraint firstItem="lFv-z2-AY6" firstAttribute="leading" secondItem="DRK-BM-V6q" secondAttribute="leadingMargin" constant="10" id="kQl-9I-H7g"/>
+                                                <constraint firstItem="lFv-z2-AY6" firstAttribute="centerY" secondItem="DRK-BM-V6q" secondAttribute="centerY" id="yoa-1T-hXN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Krk-Zr-JxM" kind="show" id="xfD-0d-aGo"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -65,7 +89,15 @@
                 <viewControllerPlaceholder storyboardName="UIPageControl" id="ZjU-0Q-8CE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpI-lu-UQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="-82"/>
+            <point key="canvasLocation" x="146" y="-278"/>
+        </scene>
+        <!--Popup-->
+        <scene sceneID="WDM-Oz-qjH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Popup" id="Krk-Zr-JxM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmE-wO-25d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gAA-wK-b41">

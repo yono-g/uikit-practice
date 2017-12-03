@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u8w-Dt-feV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup-->
+        <scene sceneID="aIi-mD-GHi">
+            <objects>
+                <viewController title="Popup" id="u8w-Dt-feV" customClass="PopupViewController" customModule="UIKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gg2-El-fch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-4O-liQ">
+                                <rect key="frame" x="155" y="311.5" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Shw-Zl-UCU"/>
+                                    <constraint firstAttribute="width" constant="64" id="sXI-TG-6FP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cat_icon01"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="u8w-Dt-feV" eventType="touchUpInside" id="CKg-T2-7Lv"/>
+                                    <segue destination="Wy9-C8-Wp3" kind="presentation" identifier="" modalTransitionStyle="crossDissolve" id="L2R-Ch-aGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nL7-4O-liQ" firstAttribute="centerY" secondItem="taJ-NP-H6f" secondAttribute="centerY" id="F2V-0x-x6x"/>
+                            <constraint firstItem="nL7-4O-liQ" firstAttribute="centerX" secondItem="taJ-NP-H6f" secondAttribute="centerX" id="oZn-Yl-6E0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="taJ-NP-H6f"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ura-lX-jnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="155"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="I7X-zP-duf">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="Wy9-C8-Wp3" customClass="ModalViewController" customModule="UIKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="hfW-ai-Obk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-tu-PwZ">
+                                <rect key="frame" x="40" y="60" width="295" height="567"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_illust01" translatesAutoresizingMaskIntoConstraints="NO" id="8hO-cm-vMw">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="567"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-mU-ndY">
+                                        <rect key="frame" x="8" y="8" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="ZMN-Zf-1Xx"/>
+                                            <constraint firstAttribute="height" constant="16" id="jYA-pB-Rsi"/>
+                                        </constraints>
+                                        <state key="normal" image="close_button"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="Wy9-C8-Wp3" eventType="touchUpInside" id="KK7-fd-zCO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8hO-cm-vMw" firstAttribute="leading" secondItem="3q7-tu-PwZ" secondAttribute="leading" id="6uN-ma-XRZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="8hO-cm-vMw" secondAttribute="bottom" id="7z0-TL-wqJ"/>
+                                    <constraint firstItem="8hO-cm-vMw" firstAttribute="top" secondItem="3q7-tu-PwZ" secondAttribute="top" id="8P9-TC-Vvu"/>
+                                    <constraint firstAttribute="trailing" secondItem="8hO-cm-vMw" secondAttribute="trailing" id="K53-PU-o96"/>
+                                    <constraint firstItem="dpd-mU-ndY" firstAttribute="leading" secondItem="3q7-tu-PwZ" secondAttribute="leading" constant="8" id="M3A-li-Dlc"/>
+                                    <constraint firstItem="dpd-mU-ndY" firstAttribute="top" secondItem="3q7-tu-PwZ" secondAttribute="top" constant="8" id="unj-1E-mcp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3q7-tu-PwZ" firstAttribute="top" secondItem="JuT-vk-NrT" secondAttribute="top" constant="40" id="97a-Up-B0f"/>
+                            <constraint firstItem="JuT-vk-NrT" firstAttribute="trailing" secondItem="3q7-tu-PwZ" secondAttribute="trailing" constant="40" id="Izv-CH-jmc"/>
+                            <constraint firstItem="JuT-vk-NrT" firstAttribute="bottom" secondItem="3q7-tu-PwZ" secondAttribute="bottom" constant="40" id="egQ-gZ-E89"/>
+                            <constraint firstItem="3q7-tu-PwZ" firstAttribute="leading" secondItem="JuT-vk-NrT" secondAttribute="leading" constant="40" id="f79-5p-BnD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JuT-vk-NrT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMZ-SW-zO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat_icon01" width="64" height="64"/>
+        <image name="cat_illust01" width="350" height="384"/>
+        <image name="close_button" width="65" height="65"/>
+    </resources>
+</document>
