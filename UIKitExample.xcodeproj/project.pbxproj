@@ -10,6 +10,9 @@
 		8C07DC681FD231270032FBE1 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C07DC671FD231270032FBE1 /* Popup.storyboard */; };
 		8C07DC6A1FD234310032FBE1 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07DC691FD234310032FBE1 /* PopupViewController.swift */; };
 		8C07DC6C1FD247300032FBE1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07DC6B1FD247300032FBE1 /* ModalViewController.swift */; };
+		8C07DC6F1FDB7A350032FBE1 /* InfiniteScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C07DC6E1FDB7A350032FBE1 /* InfiniteScroll.storyboard */; };
+		8C07DC931FDB88D30032FBE1 /* InfiniteScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07DC921FDB88D30032FBE1 /* InfiniteScrollViewController.swift */; };
+		8C07DC951FDB95300032FBE1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07DC941FDB95300032FBE1 /* MyTableViewCell.swift */; };
 		8C4432451FCA3FCC0062E97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4432441FCA3FCC0062E97C /* AppDelegate.swift */; };
 		8C44324A1FCA3FCC0062E97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4432481FCA3FCC0062E97C /* Main.storyboard */; };
 		8C44324C1FCA3FCC0062E97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C44324B1FCA3FCC0062E97C /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		8C07DC671FD231270032FBE1 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		8C07DC691FD234310032FBE1 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		8C07DC6B1FD247300032FBE1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		8C07DC6E1FDB7A350032FBE1 /* InfiniteScroll.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfiniteScroll.storyboard; sourceTree = "<group>"; };
+		8C07DC921FDB88D30032FBE1 /* InfiniteScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewController.swift; sourceTree = "<group>"; };
+		8C07DC941FDB95300032FBE1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		8C4432411FCA3FCC0062E97C /* UIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4432441FCA3FCC0062E97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4432491FCA3FCC0062E97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +98,16 @@
 			path = Popup;
 			sourceTree = "<group>";
 		};
+		8C07DC6D1FDB7A150032FBE1 /* InfiniteScroll */ = {
+			isa = PBXGroup;
+			children = (
+				8C07DC6E1FDB7A350032FBE1 /* InfiniteScroll.storyboard */,
+				8C07DC921FDB88D30032FBE1 /* InfiniteScrollViewController.swift */,
+				8C07DC941FDB95300032FBE1 /* MyTableViewCell.swift */,
+			);
+			path = InfiniteScroll;
+			sourceTree = "<group>";
+		};
 		8C4432381FCA3FCC0062E97C = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +131,7 @@
 		8C4432431FCA3FCC0062E97C /* UIKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				8C07DC6D1FDB7A150032FBE1 /* InfiniteScroll */,
 				8C07DC661FD231080032FBE1 /* Popup */,
 				8C4432721FCA442F0062E97C /* UIPageControl */,
 				8C4432441FCA3FCC0062E97C /* AppDelegate.swift */,
@@ -264,6 +281,7 @@
 				8C44324A1FCA3FCC0062E97C /* Main.storyboard in Resources */,
 				8C4432741FCA44640062E97C /* UIPageControl.storyboard in Resources */,
 				8C07DC681FD231270032FBE1 /* Popup.storyboard in Resources */,
+				8C07DC6F1FDB7A350032FBE1 /* InfiniteScroll.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C07DC6C1FD247300032FBE1 /* ModalViewController.swift in Sources */,
+				8C07DC931FDB88D30032FBE1 /* InfiniteScrollViewController.swift in Sources */,
 				8C4432451FCA3FCC0062E97C /* AppDelegate.swift in Sources */,
 				8C4432761FCA4A4E0062E97C /* UIPageControlViewController.swift in Sources */,
 				8C07DC6A1FD234310032FBE1 /* PopupViewController.swift in Sources */,
+				8C07DC951FDB95300032FBE1 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
