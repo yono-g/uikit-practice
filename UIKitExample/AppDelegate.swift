@@ -40,6 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        // Do something
+        
+        let result: String = arc4random_uniform(2) == 0 ? "Success" : "Error"
+        
+        let alert = UIAlertController(title: "Read " + String(describing: url), message: result, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        window?.rootViewController?.present(alert, animated: true, completion: nil)
+        
+        return true
+    }
 
 }
 
