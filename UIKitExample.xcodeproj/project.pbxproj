@@ -21,6 +21,10 @@
 		8C4432651FCA3FCC0062E97C /* UIKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4432641FCA3FCC0062E97C /* UIKitExampleUITests.swift */; };
 		8C4432741FCA44640062E97C /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4432731FCA44640062E97C /* UIPageControl.storyboard */; };
 		8C4432761FCA4A4E0062E97C /* UIPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4432751FCA4A4E0062E97C /* UIPageControlViewController.swift */; };
+		8C70EB5C20D4A1A900776EF3 /* ScrollTabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C70EB5B20D4A1A900776EF3 /* ScrollTabMenu.storyboard */; };
+		8C70EB5E20D4A2F700776EF3 /* ScrollTabMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */; };
+		8C70EB6020D4A45E00776EF3 /* ScrollTabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70EB5F20D4A45E00776EF3 /* ScrollTabMenuView.swift */; };
+		8C70EB6220D4A98600776EF3 /* ScrollTabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70EB6120D4A98600776EF3 /* ScrollTabMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		8C4432661FCA3FCC0062E97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C4432731FCA44640062E97C /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageControl.storyboard; sourceTree = "<group>"; };
 		8C4432751FCA4A4E0062E97C /* UIPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlViewController.swift; sourceTree = "<group>"; };
+		8C70EB5B20D4A1A900776EF3 /* ScrollTabMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollTabMenu.storyboard; sourceTree = "<group>"; };
+		8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTabMenu.xib; sourceTree = "<group>"; };
+		8C70EB5F20D4A45E00776EF3 /* ScrollTabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabMenuView.swift; sourceTree = "<group>"; };
+		8C70EB6120D4A98600776EF3 /* ScrollTabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 		8C4432431FCA3FCC0062E97C /* UIKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				8C70EB5A20D4A18E00776EF3 /* ScrollTabMenu */,
 				8C07DC6D1FDB7A150032FBE1 /* InfiniteScroll */,
 				8C07DC661FD231080032FBE1 /* Popup */,
 				8C4432721FCA442F0062E97C /* UIPageControl */,
@@ -168,6 +177,17 @@
 				8C4432751FCA4A4E0062E97C /* UIPageControlViewController.swift */,
 			);
 			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		8C70EB5A20D4A18E00776EF3 /* ScrollTabMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8C70EB6120D4A98600776EF3 /* ScrollTabMenuViewController.swift */,
+				8C70EB5B20D4A1A900776EF3 /* ScrollTabMenu.storyboard */,
+				8C70EB5F20D4A45E00776EF3 /* ScrollTabMenuView.swift */,
+				8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */,
+			);
+			path = ScrollTabMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +301,8 @@
 				8C44324A1FCA3FCC0062E97C /* Main.storyboard in Resources */,
 				8C4432741FCA44640062E97C /* UIPageControl.storyboard in Resources */,
 				8C07DC681FD231270032FBE1 /* Popup.storyboard in Resources */,
+				8C70EB5E20D4A2F700776EF3 /* ScrollTabMenu.xib in Resources */,
+				8C70EB5C20D4A1A900776EF3 /* ScrollTabMenu.storyboard in Resources */,
 				8C07DC6F1FDB7A350032FBE1 /* InfiniteScroll.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,9 +330,11 @@
 			files = (
 				8C07DC6C1FD247300032FBE1 /* ModalViewController.swift in Sources */,
 				8C07DC931FDB88D30032FBE1 /* InfiniteScrollViewController.swift in Sources */,
+				8C70EB6220D4A98600776EF3 /* ScrollTabMenuViewController.swift in Sources */,
 				8C4432451FCA3FCC0062E97C /* AppDelegate.swift in Sources */,
 				8C4432761FCA4A4E0062E97C /* UIPageControlViewController.swift in Sources */,
 				8C07DC6A1FD234310032FBE1 /* PopupViewController.swift in Sources */,
+				8C70EB6020D4A45E00776EF3 /* ScrollTabMenuView.swift in Sources */,
 				8C07DC951FDB95300032FBE1 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
