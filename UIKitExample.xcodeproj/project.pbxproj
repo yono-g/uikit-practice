@@ -25,6 +25,8 @@
 		8C70EB5E20D4A2F700776EF3 /* ScrollTabMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */; };
 		8C70EB6020D4A45E00776EF3 /* ScrollTabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70EB5F20D4A45E00776EF3 /* ScrollTabMenuView.swift */; };
 		8C70EB6220D4A98600776EF3 /* ScrollTabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70EB6120D4A98600776EF3 /* ScrollTabMenuViewController.swift */; };
+		8C9A1B8C20DDD72100CEBFBF /* NoResults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9A1B8B20DDD72100CEBFBF /* NoResults.storyboard */; };
+		8C9A1B8E20DDD7C400CEBFBF /* NoResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9A1B8D20DDD7C400CEBFBF /* NoResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollTabMenu.xib; sourceTree = "<group>"; };
 		8C70EB5F20D4A45E00776EF3 /* ScrollTabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabMenuView.swift; sourceTree = "<group>"; };
 		8C70EB6120D4A98600776EF3 /* ScrollTabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabMenuViewController.swift; sourceTree = "<group>"; };
+		8C9A1B8B20DDD72100CEBFBF /* NoResults.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoResults.storyboard; sourceTree = "<group>"; };
+		8C9A1B8D20DDD7C400CEBFBF /* NoResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		8C4432431FCA3FCC0062E97C /* UIKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				8C9A1B8A20DDD70900CEBFBF /* NoResults */,
 				8C70EB5A20D4A18E00776EF3 /* ScrollTabMenu */,
 				8C07DC6D1FDB7A150032FBE1 /* InfiniteScroll */,
 				8C07DC661FD231080032FBE1 /* Popup */,
@@ -188,6 +193,15 @@
 				8C70EB5D20D4A2F700776EF3 /* ScrollTabMenu.xib */,
 			);
 			path = ScrollTabMenu;
+			sourceTree = "<group>";
+		};
+		8C9A1B8A20DDD70900CEBFBF /* NoResults */ = {
+			isa = PBXGroup;
+			children = (
+				8C9A1B8B20DDD72100CEBFBF /* NoResults.storyboard */,
+				8C9A1B8D20DDD7C400CEBFBF /* NoResultsViewController.swift */,
+			);
+			path = NoResults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +316,7 @@
 				8C4432741FCA44640062E97C /* UIPageControl.storyboard in Resources */,
 				8C07DC681FD231270032FBE1 /* Popup.storyboard in Resources */,
 				8C70EB5E20D4A2F700776EF3 /* ScrollTabMenu.xib in Resources */,
+				8C9A1B8C20DDD72100CEBFBF /* NoResults.storyboard in Resources */,
 				8C70EB5C20D4A1A900776EF3 /* ScrollTabMenu.storyboard in Resources */,
 				8C07DC6F1FDB7A350032FBE1 /* InfiniteScroll.storyboard in Resources */,
 			);
@@ -330,6 +345,7 @@
 			files = (
 				8C07DC6C1FD247300032FBE1 /* ModalViewController.swift in Sources */,
 				8C07DC931FDB88D30032FBE1 /* InfiniteScrollViewController.swift in Sources */,
+				8C9A1B8E20DDD7C400CEBFBF /* NoResultsViewController.swift in Sources */,
 				8C70EB6220D4A98600776EF3 /* ScrollTabMenuViewController.swift in Sources */,
 				8C4432451FCA3FCC0062E97C /* AppDelegate.swift in Sources */,
 				8C4432761FCA4A4E0062E97C /* UIPageControlViewController.swift in Sources */,
